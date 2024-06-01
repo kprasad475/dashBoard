@@ -1,0 +1,21 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  app-sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+  }
+  
+  app-main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+  }
