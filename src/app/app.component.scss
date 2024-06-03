@@ -19,3 +19,23 @@
     padding: 20px;
     background-color: #fff;
   }
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  app-sidebar {
+    width: 200px;
+    border-right: 1px solid #ddd;
+  }
+  
+  router-outlet {
+    flex: 1;
+    padding: 16px;
+  }

@@ -1,0 +1,38 @@
+/* src/app/dashboard/dashboard.component.css */
+/* src/app/dashboard/dashboard.component.css */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    background-color: #daff84d5;
+
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+
+.dashboard-inner {
+    padding: 16px;
+    background-color: #dcff8bd5;
+    color: #000000;
+
+
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+   

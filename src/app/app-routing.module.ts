@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainContentComponent } from './main-content/main-content.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const routes: Routes = [
-  { path: '', component: MainContentComponent },
-  { path: 'reports', component: MainContentComponent }, // You can replace with actual components
-  { path: 'settings', component: MainContentComponent } // You can replace with actual components
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'dashboard', component: DashboardComponent },
 ];
 
 @NgModule({
