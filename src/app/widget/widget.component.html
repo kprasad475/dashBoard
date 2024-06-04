@@ -4,8 +4,8 @@
         <h3>{{data.title}}</h3>
         <p>{{data.content}}</p>
     
-    <input [(ngModel)]="editableData.title" placeholder="widget title"/>
-    <input [(ngModel)]="editableData.content" placeholder="widget content">
-    <button (click)="save()">Save</button>
-    <button (click)="remove()">Remove</button>
+    <input class="text-style"       [(ngModel)]="editableData.title" placeholder="widget title"/>
+    <input  class="text-style"   [(ngModel)]="editableData.content" placeholder="widget content">
+    <button class="buttonstyle"    (click)="save()">Save</button>
+    <button class="buttonstyle" (click)="remove()">Remove</button>
 </div>

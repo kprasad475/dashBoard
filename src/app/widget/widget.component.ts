@@ -23,6 +23,7 @@ export class WidgetComponent implements OnInit{
 
   save(){
     this.removing.emit(this.editableData);
+    console.log(this.editableData)
   }
 
   remove(){

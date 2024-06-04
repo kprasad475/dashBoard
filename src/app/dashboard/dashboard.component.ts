@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,OnInit} from '@angular/core';
 import { WidgetData } from '../widget-model';
 
 
@@ -19,6 +19,11 @@ export class DashboardComponent {
   widgetTitle='';
   widgetContent ='';
 
+  ngOninit(){
+    console.log(this.widgetTitle);
+    console.log(this.widgetContent)
+  }
+
   addWidget(){
    this.widgetTitle='';
    this.widgetContent ='';
@@ -26,18 +31,24 @@ export class DashboardComponent {
 
   createWidget(){
     if(this.widgetTitle && this.widgetContent){
+      console.log(this.widgetTitle)
       this.widgets.push({title:this.widgetTitle,content:this.widgetContent})
       this.widgetTitle='';
       this.widgetContent= '';
     }
   }
 
+  
+
   removeWidget(index:number){
     this.widgets.splice(index,1);
 
 
   }
+
+
   editWidget(data:WidgetData,index:number){
+    console.log(data)
     this.widgets[index]=data;
   }
 

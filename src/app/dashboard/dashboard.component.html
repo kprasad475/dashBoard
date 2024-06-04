@@ -1,9 +1,9 @@
 <div class="dashboard-inner">
-    <button class="add-widget-btn"><i class="fa fa-plus"></i> Add Widget</button>
+    <button class="buttonstyle"><i class="fa fa-plus"></i> Add Widget</button>
     <div class="form">
-      <input [(ngModel)]="widgetTitle" placeholder="Widget Title">
-      <input [(ngModel)]="widgetContent" placeholder="Widget Content">
-      <button (click)="createWidget()">Create Widget</button>
+      <input class="text-style" [(ngModel)]="widgetTitle" placeholder="Widget Title">
+      <input class="text-style"   [(ngModel)]="widgetContent" placeholder="Widget Content">
+      <button class="buttonstyle"   (click)="createWidget()">Create Widget</button>
     </div>
     <div class="widgets">
       <app-widget *ngFor="let widget of widgets; let i = index"
@@ -12,6 +12,8 @@
                   (editing)="editWidget($event, i)"></app-widget>
     </div>
   </div>
+
+
 
 
   
